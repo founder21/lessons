@@ -1,0 +1,33 @@
+/* @import url("nullstyle.css"); */
+.header {
+   color: green;
+}
+.header h1,
+.section h2 {
+   color: red;
+}
+#list {
+   color: rgb(8, 122, 84);
+}
+.second {
+   color: burlywood;
+}
+.second.history {
+   color: blueviolet;
+}
+.second-title,
+.construct-title {
+   color: chartreuse;
+}
+.plan > p {
+   color: aqua;
+}
+.plan ~ p {
+   color: rgb(195, 13, 220);
+}
+.plan + p {
+   color: rgb(9, 107, 244);
+}
+[class*="__pic"] {
+   color: rgb(246, 142, 5);
+}

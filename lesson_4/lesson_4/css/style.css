@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("nullstyle.css");
+@font-face {
+   font-family: "Montserrat";
+   src: url("../fonts/Montserrat-Thin.woff2") format("woff2"), url("../fonts/Montserrat-Thin.woff") format("woff");
+   font-weight: 100;
+   font-style: normal;
+   font-display: swap;
+}
+main {
+   text-align: left;
+}
+.header h1 {
+   font-size: 22px;
+   font-weight: 700;
+   color: #414141;
+   text-align: center;
+   text-shadow: 1px 1px 1px #414141;
+   text-transform: uppercase;
+   letter-spacing: 10px;
+}
+.header span {
+   font-size: 26px;
+   font-weight: 700;
+   color: red;
+}
+.history {
+   line-height: 2; /* 40/20 */
+   font-family: "Poppins", sans-serif;
+}
+.history p {
+   text-shadow: 1px 1px 3px #000;
+}
+.title-block {
+   font-weight: 600;
+   text-align: center;
+   font-style: italic;
+   text-transform: capitalize;
+   color: blue;
+   text-decoration: underline;
+   font-family: "Aboreto", cursive;
+}
+.about {
+   white-space: nowrap;
+   font-family: "Dancing Script", cursive;
+}
+.exterire {
+   word-spacing: 20px;
+   font-family: "Montserrat", sans-serif;
+}

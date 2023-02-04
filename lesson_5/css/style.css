@@ -1,0 +1,35 @@
+@import url("nullstyle.css");
+
+main {
+   font-family: "Poppins", sans-serif;
+   padding: 0 100px;
+   text-align: left;
+}
+.block-text {
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 178.571429%; /* 25/14 */
+   max-width: 816px;
+   margin: 0 auto;
+   color: #6c757d;
+}
+.block-text h2 {
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 200%; /* 40/20 */
+   color: #212529;
+   margin-bottom: 37px;
+   max-width: 605px;
+}
+.block-text p {
+   margin-bottom: 14px;
+}
+.big-img {
+   display: block;
+   margin: 80px auto;
+   max-width: 100%;
+}
+.block-img {
+   text-align: center;
+   margin: 80px 0;
+}

@@ -1,0 +1,32 @@
+@import url("nullstyle.css");
+
+body {
+   background: #e8e7e7;
+}
+.container {
+   max-width: 1440px;
+   margin: 0 auto;
+   text-align: center;
+   padding: 15px;
+}
+.block-svg,
+.content-img,
+.design-img {
+   box-shadow: 1px 2px 4px #a5c4a7;
+   padding: 10px;
+}
+.block-svg-title,
+.content-img-title,
+.design-img-title {
+   margin-bottom: 20px;
+   font-size: 22px;
+   font-weight: 700;
+}
+.block-svg-item img,
+.content-img-item img,
+.design-img-item img {
+   margin: 10px 5px;
+}
+.content-img-item img {
+   border-radius: 16px;
+}

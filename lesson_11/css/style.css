@@ -1,0 +1,136 @@
+@import url("nullstyle.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:300,500,700&display=swap");
+
+[class*="__container"] {
+   max-width: 1240px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   background: #e5e5e5;
+   font-family: "Inter" sans-serif;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 150%; /* 24/16 */
+   color: #212b36;
+}
+
+.header {
+   background: #ffffff;
+   padding: 30px 0;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+}
+.header-block {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.logo {
+}
+.categories-btn {
+   position: relative;
+}
+
+.categories-link {
+   background: #f4f7ff;
+   border-radius: 5px;
+   padding: 9px 20px;
+}
+.categories-link::after {
+   content: url(../img/vector.svg);
+   padding-left: 13px;
+}
+.categories-btn:hover .sub-categories {
+   opacity: 1;
+   visibility: visible;
+}
+
+.sub-categories {
+   padding: 22px 0 22px 24px;
+   opacity: 0;
+   visibility: hidden;
+   background: #ffffff;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 150%;
+   color: #637381;
+   border: 0.5px solid #e7e7e7;
+   border-radius: 5px;
+   position: absolute;
+   left: 50%;
+   min-width: 213px;
+   top: 100%;
+}
+.sub-categories li:not(:last-child) {
+   padding-bottom: 13px;
+}
+.sub-categories li a:hover {
+   color: #3056d3;
+}
+.sub-categories-item {
+   position: relative;
+}
+.sub-categories-item::after {
+   content: "";
+   display: inline-block;
+   width: 15px;
+   height: 10px;
+   position: relative;
+   left: 100px;
+   background: url(../img/vector.svg) 0 0 no-repeat;
+}
+.sub-categories-second {
+   position: absolute;
+   display: flex;
+   top: 0;
+   left: 100%;
+   border: 0.5px solid #e7e7e7;
+   border-radius: 5px;
+   background: white;
+   width: max-content;
+   padding: 20px;
+   opacity: 0;
+   visibility: hidden;
+}
+.sub-categories-second ul {
+   margin-right: 55px;
+}
+.sub-categories-second__list li:first-child {
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 24px;
+   color: #212b36;
+}
+.sub-categories-item:hover .sub-categories-second {
+   opacity: 1;
+   visibility: visible;
+}
+.navi {
+   display: flex;
+}
+.navi li:not(:last-child) {
+   padding-right: 35px;
+}
+.navi li a:hover {
+   color: #3056d3;
+}
+.shop-block {
+   display: flex;
+}
+.shop-block li:not(:last-child) {
+   padding-right: 20px;
+}
+.search {
+}
+.favorites {
+}
+.basket {
+}
+.lorem {
+   padding-top: 100px;
+}

@@ -1,0 +1,275 @@
+@import url("nullstyle.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:300,500,700&display=swap");
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   padding: 15px;
+}
+[class*="__container"] {
+   max-width: 1240px;
+   margin: 0 auto;
+}
+/* ! block */
+.item-block {
+   height: 150px;
+   width: 150px;
+   border-radius: 4px;
+   background: #efb8b8d7;
+   margin: 120px auto;
+}
+.items {
+   height: 150px;
+   width: 150px;
+   border-radius: 4px;
+   background: #be0202d7;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: gold;
+   font-size: 16px;
+   font-weight: 600;
+   padding: 0 50px;
+}
+.items_translete {
+   transform: translate(50%, 30%);
+}
+.items_scale {
+   transform: scale(1.5);
+}
+.items_scale-min {
+   transform: scale(0.5);
+}
+.items_rotete {
+   transform: rotate(50deg);
+}
+.items_skew {
+   transform: skew(20deg);
+}
+.items_martix {
+   transform: matrix(0.5, 0.1, 0.1, 0.5, 10, 15);
+}
+.items_2d {
+   transform: translate(30px, 30px) rotate(45deg) scale(0.8);
+}
+.items_origin {
+   transform-origin: center;
+   transform: rotate(45deg);
+}
+.items_origin-left {
+   transform-origin: left;
+   transform: rotate(90deg);
+}
+.perspective {
+   perspective: 400px;
+}
+.items_perspective {
+   transform: rotateX(40deg);
+}
+.items_rotate3d {
+   transform: rotate3d(1, 1, 1, 45deg);
+}
+.items_backface-visibility {
+   transform: rotateY(50deg);
+   backface-visibility: hidden;
+}
+
+/* ! TANK */
+.tank {
+   width: 1100px;
+   margin: 0 auto;
+   margin-bottom: 200px;
+}
+
+.header-tank {
+   height: 60px;
+   width: 120px;
+   background-color: #78866b;
+   position: relative;
+   top: 0;
+   left: 1px;
+   border-radius: 8px;
+   margin: 0 auto;
+}
+.small-gun {
+   height: 30px;
+   width: 35px;
+   background-color: #78866b;
+   position: absolute;
+   top: 15px;
+   left: 100%;
+   border-radius: 0 6px 6px 0;
+}
+.small-gun__big-gun {
+   height: 15px;
+   width: 125px;
+   background-color: #78866b;
+   position: absolute;
+   top: 8px;
+   left: 100%;
+   border-radius: 0 10px 10px 0;
+}
+
+.body-tank {
+   width: 400px;
+   height: 60px;
+   border-radius: 30px 30px 15px 15px;
+   background-color: #78866b;
+   position: relative;
+   margin: 0 auto;
+}
+.gusli {
+   width: 400px;
+   height: 53px;
+   border-radius: 30px;
+   border-top: 2px dashed black;
+   background-color: rgba(93, 156, 93, 0.268);
+   position: absolute;
+   top: 100%;
+   left: 0;
+}
+.gusli__circul {
+   width: 50px;
+   height: 50px;
+   background-color: red;
+   display: inline-block;
+   margin: 0 6px;
+   border-radius: 50%;
+   border: 4px dashed black;
+   background: #6a806b;
+}
+.flag {
+   position: absolute;
+   top: 10px;
+   left: 150px;
+}
+.blue {
+   width: 50px;
+   height: 15px;
+   background: blue;
+}
+.yellow {
+   width: 50px;
+   height: 15px;
+   background: yellow;
+}
+
+/* ! CAR */
+
+.car {
+   padding: 200px;
+}
+.car__container {
+   max-width: 500px;
+   /* margin: 0 auto; */
+}
+.glass {
+   height: 140px;
+   width: 300px;
+   background: rgb(0, 0, 0);
+   background: linear-gradient(304deg, rgba(0, 0, 0, 1) 18%, rgba(244, 247, 255, 0.8281687675070029) 100%);
+   margin: 0 auto;
+   border-radius: 50px 50px 0 0;
+   border-right: 15px solid red;
+   border-left: 15px solid red;
+   border-top: 10px solid red;
+   position: relative;
+}
+.mirror-left {
+   height: 35px;
+   border-radius: 20px;
+   width: 60px;
+   background: rgb(254, 11, 11);
+   background: linear-gradient(104deg, rgba(244, 247, 255, 0.8281687675070029), rgba(254, 11, 11, 1) 54% 100%);
+   position: absolute;
+   bottom: 8px;
+   right: 105%;
+}
+.mirror-right {
+   height: 35px;
+   border-radius: 20px;
+   width: 60px;
+   background: rgb(254, 11, 11);
+   background: linear-gradient(304deg, rgba(244, 247, 255, 0.8281687675070029), rgba(254, 11, 11, 1) 54% 100%);
+   position: absolute;
+   bottom: 8px;
+   left: 105%;
+}
+.car-body {
+   height: 200px;
+   width: 480px;
+   background: rgb(210, 202, 56);
+   background: linear-gradient(54deg, rgba(210, 202, 56, 1) 0%, rgba(224, 27, 27, 1) 0%);
+   margin: 0 auto;
+   border-radius: 65px;
+   position: relative;
+}
+.lamp-block {
+   height: 40px;
+   width: 400px;
+   display: flex;
+   justify-content: space-between;
+   border-radius: 10px;
+   background: #26282d;
+   position: absolute;
+   top: 50px;
+   left: 40px;
+}
+.circul {
+   height: 35px;
+   display: inline-block;
+   width: 35px;
+   background: rgb(255, 255, 255);
+   background: radial-gradient(circle, rgba(255, 255, 255, 1) 15%, rgba(65, 65, 65, 1) 97%);
+   margin: 0 6px;
+   border-radius: 50%;
+}
+.car__container:hover .circul {
+   background: #e0d31b;
+   box-shadow: 0px 0px 20px 16px #e0d31b;
+}
+
+.lamp-block-light {
+   display: inline-block;
+   padding: 2px 0;
+}
+.car-body-black-line {
+   height: 36px;
+   width: 320px;
+   border-radius: 10px;
+   background: #26282d;
+   position: absolute;
+   bottom: 40px;
+   left: 80px;
+   padding: 3px;
+}
+.car-body-black-line__number {
+   height: 30px;
+   width: 100px;
+   text-align: center;
+   padding: 6px 0;
+   background: rgb(27, 132, 224);
+   background: linear-gradient(54deg, rgba(27, 132, 224, 1) 35%, rgba(210, 202, 56, 1) 65%);
+   margin: 0 auto;
+   border-radius: 8px;
+}
+.tire-left {
+   height: 80px;
+   width: 50px;
+   background: #26282d;
+   position: absolute;
+   bottom: -40px;
+   left: 35px;
+   z-index: -1;
+   border-radius: 12px;
+}
+.tire {
+   height: 80px;
+   width: 50px;
+   background: #26282d;
+   position: absolute;
+   bottom: -40px;
+   right: 35px;
+   z-index: -1;
+   border-radius: 12px;
+}

@@ -84,7 +84,7 @@
    display: flex;
    justify-content: center;
 }
-.body__light-back {
+.body-car__light-back {
    width: 16px;
    height: 10px;
    background: #ffcd00;
@@ -93,7 +93,7 @@
    left: 0;
    border-radius: 0 5px 5px 0;
 }
-.body__light-front {
+.body-car__light-front {
    width: 16px;
    height: 10px;
    background: #ffcd00;

@@ -2,19 +2,24 @@
 @import url("common.css");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap");
 
+body {
+	background: #e5e5e5;
+}
 .wrapper {
 	overflow: clip;
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
 	padding: 0 15px;
-	max-width: 1340px;
 	margin: 0 auto;
 	color: #495057;
 	font-family: "Poppins";
 	font-weight: 300;
 	font-size: 12px;
+	max-width: 1440px;
 	line-height: 166.666667%; /* 20/12 */
+	max-width: 1270px;
+	background: #f8f9fa;
 }
 .wrapper > main {
 	flex-grow: 1;
@@ -22,6 +27,7 @@
 
 [class*="__container"] {
 	margin: 0 auto;
+	/* max-width: 1270px; */
 }
 .header-block {
 	padding-top: 40px;

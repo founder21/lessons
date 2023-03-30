@@ -1,0 +1,127 @@
+@import url("nullstyle.css");
+@import url("common.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 160%;
+	color: #9c9c9c;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 30px 0;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+[class*="__container"] {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+/* ----------------- */
+.cards {
+	padding: 40px 0;
+}
+.card__image {
+	margin-right: 100px;
+	transition: transform 0.5s;
+	flex: 0 1 746px;
+	overflow: hidden;
+}
+.card__image img {
+}
+.card__image:hover {
+	transform: scale(1.03);
+}
+
+.card {
+	display: flex;
+	gap: 20px;
+}
+.block:not(:last-child) {
+	margin-bottom: 45px;
+}
+.text-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	flex: 0 1 334px;
+}
+.text-block__title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 140%;
+	color: #333333;
+}
+.next {
+	display: flex;
+	justify-content: end;
+	font-size: 16px;
+	transition: font-size 0.3s;
+}
+.next:hover {
+	font-size: 17px;
+	color: #333333;
+}
+
+/*! minimalist page */
+.minimalist__title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 140%;
+	color: #000000;
+	margin-bottom: 53px;
+}
+.minimalist__title h1 {
+	margin-bottom: 40px;
+}
+.minimalist__sub-titel {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 160%;
+	text-align: center;
+	color: #000000;
+	max-width: 518px;
+	margin: 0 auto;
+}
+.big-img {
+	margin-bottom: 100px;
+}
+.block-text__container {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 160%;
+	color: #9c9c9c;
+	display: flex;
+	column-gap: 32px;
+	margin-bottom: 82px;
+}
+
+.galary {
+}
+.galary__container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 32px;
+}
+.galary-block__link {
+	overflow: hidden;
+}
+
+.galary-block {
+}
+.galary-block__pic {
+	transition: transform 0.5s;
+}
+.galary-block__pic:hover {
+	transform: scale(1.1);
+}

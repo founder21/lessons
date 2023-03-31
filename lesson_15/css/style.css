@@ -93,6 +93,20 @@ body {
 	max-width: 518px;
 	margin: 0 auto;
 }
+.block-text__left-block {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex: 0 1 50%;
+	flex-direction: column;
+}
+.block-text__right-block {
+	flex: 0 1 50%;
+}
+.block-text__left-block > .left-block__text {
+	flex-grow: 1;
+}
+
 .big-img {
 	margin-bottom: 100px;
 }

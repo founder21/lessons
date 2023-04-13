@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<div class="page__container">
+				<div class="page__title title">
+					<span>Shipping Address</span>
+				</div>
+				<form class="form" method="get" enctype="multipart/form-data" action="#">
+					<div class="form__item item">
+						<label class="item__label" for="email">
+							Email Address
+							<span class="red">*</span>
+						</label>
+						<input required class="item__input" id="email" placeholder="roni_cost@example.com" name="mail" type="email">
+					</div>
+					<div class="form__item item">
+						<label class="item__label" for="pass">
+							Password
+						</label>
+						<input class="item__input" id="pass" name="Password" type="password">
+					</div>
+					<div class="form__item item">
+						<label class="item__label" for="text">
+							Zip/Postal Code
+						</label>
+						<input class="item__input" id="text" name="text" type="text">
+					</div>
+					<p>You already have an account with us. Sign in or continue as guest.</p>
+					<div class="authorization-block">
+						<button class="button" type="submit">login</button>
+						<a class="forgot-link" href="#">Forgot Your Password?</a>
+					</div>
+				</form>
+
+				<form class="form" method="get" enctype="multipart/form-data">
+					<div class="form__item item">
+						<label class="item__label" for="name">
+							First Name
+							<span class="red">*</span>
+						</label>
+						<input required class="item__input" id="name" name="mail" type="text">
+					</div>
+					<div class="form__item item">
+						<label class="item__label" for="last-name">
+							Last Name
+							<span class="red">*</span>
+						</label>
+						<input required class="item__input" id="last-name" name="last-name" type="text">
+					</div>
+					<div class="form__item item">
+						<label class="item__label" for="company">
+							Company
+						</label>
+						<input class="item__input" id="company" name="company" type="text">
+					</div>
+					<div class="form__item item">
+						<label class="item__label" for="street">
+							Street Address
+							<span class="red">*</span>
+						</label>
+						<input required class="item__input" id="street" name="street" type="t">
+					</div>
+					<div class="form__item item">
+						<label class="item__label" for="street-02">
+						</label>
+						<input class="item__input" id="street-02" name="street-02" type="text">
+					</div>
+					<div class="form__item item">
+						<label class="item__label" for="street-03">
+						</label>
+						<input class="item__input" id="street-03" name="street-03" type="text">
+					</div>
+					<div class="form__item item">
+						<label class="item__label" for="street-04">
+							Country
+							<span class="red">*</span>
+						</label>
+						<input required class="item__input" id="street-04" name="street" type="text">
+					</div>
+					<div class="form__item item">
+						<label class="item__label" for="street">
+							State/Province
+							<span class="red">*</span>
+						</label>
+						<select required class="item__input input-select" name="list">
+							<option selected value="1">Please select a region, state or province</option>
+							<option value="2">Lorem</option>
+							<option value="3">Lorem</option>
+							<option value="4">Lorem</option>
+							<option value="5">Lorem</option>
+						</select>
+					</div>
+
+					<div class="page__title title">
+						<span>Shipping Methods</span>
+					</div>
+
+					<div class="form__radio radio">
+						<input checked class="form__input form__input_radio" id="doll-1" value="cat" name="pet" type="radio">
+						<label class="form-radio" for="doll-1">
+							<span>$5.00</span>
+							<div class="form-radio__choice">
+								<span>Fixed</span>
+								<span>Flat Rate</span>
+							</div>
+						</label>
+					</div>
+					<div class="form__radio radio">
+						<input class="form__input form__input_radio" id="doll" value="cat" name="pet" type="radio">
+						<label class="form-radio" for="doll">
+							<span>$10.00</span>
+							<div class="form-radio__choice">
+								<span>Table Rate</span>
+								<span>Best Way</span>
+							</div>
+						</label>
+					</div>
+
+					<div class="bottom-block">
+						<button class="button" type="submit">Next</button>
+						<a class="bottom-block-back" href="#">Back</a>
+					</div>
+				</form>
+				<div class="billing">
+					<div class="title">
+						<span>Billing Details</span>
+					</div>
+					<form class="billing-form" method="get" enctype="multipart/form-data" action="#">
+						<div class="billing-form__line-item line-item">
+							<input required class="line-item__input" placeholder="First name*" name="first-name" type="text">
+							<input required class="line-item__input" placeholder="Last name*" name="second-name" type="text">
+							<input required class="line-item__input" placeholder="Address*" name="address" type="text">
+							<input class="line-item__input" placeholder="Address line 2" name="address-2" type="text">
+							<select class="line-item__input" name="country">
+								<option value="1">Country</option>
+								<option value="2">Country</option>
+								<option value="3">Country</option>
+								<option value="4">Country</option>
+								<option value="5">Country</option>
+							</select>
+							<input required class="line-item__input" placeholder="City/Town*" name="address" type="text">
+							<input required class="line-item__input" placeholder="Postcode / ZIP*" name="address" type="text">
+							<input required class="line-item__input" placeholder="Phone*" name="address" type="tel">
+							<input required class="line-item__input" placeholder="Postcode / ZIP*" name="address" type="text">
+							<input class="line-item__input" placeholder="Phone" name="address" type="tel">
+							<textarea class="billing-form-textarea" autocomplete="off" placeholder="Your text..." name="textarea"></textarea>
+							<div class="checkbox-block-create-acc">
+								<div class="create-account">
+									<label for="create-acc">Create Account</label>
+									<input type="checkbox" name="create-acc" id="create-acc">
+								</div>
+								<div class="create-account">
+									<label for="different">Ship to a different address?</label>
+									<input type="checkbox" name="different" id="different">
+								</div>
+							</div>
+						</div>
+						<button class="button button-code btn-go" type="submit">GO!</button>
+					</form>
+					<div class="title">
+						<span>Apply Coupon to get discount!</span>
+					</div>
+					<form class="apply-form" method="get" enctype="multipart/form-data">
+						<input class="apply-form__input" type="text" name="cupon-text" placeholder="Coupon code">
+						<button class="button button-code" type="button">Apply Code</button>
+					</form>
+
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>

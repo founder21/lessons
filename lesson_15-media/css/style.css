@@ -1,0 +1,190 @@
+@import url("nullstyle.css");
+@import url("common.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 160%;
+	color: #9c9c9c;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 30px;
+	padding-top: 15px;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+[class*="__container"] {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+/* ----------------- */
+
+.card__image {
+	transition: transform 0.5s;
+	max-width: 746px;
+	overflow: hidden;
+}
+.card__image:hover {
+	transform: scale(1.03);
+}
+.card__image img {
+	width: 100%;
+}
+.text-block__text {
+	max-height: 312px;
+	overflow: scroll;
+}
+
+.card {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 20px 0;
+}
+.text-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	flex: 0 1 334px;
+}
+.text-block__title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 140%;
+	color: #333333;
+}
+.next {
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+	padding-top: 10px;
+	transition: font-size 0.3s;
+}
+.next:hover {
+	font-size: 17px;
+	color: #333333;
+}
+
+/*! minimalist page */
+.minimalist__title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 140%;
+	color: #000000;
+}
+
+.title-text-minimalist {
+	margin-bottom: 40px;
+}
+.minimalist__sub-titel {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 160%;
+	text-align: center;
+	color: #000000;
+	max-width: 518px;
+	margin: 0 auto;
+	margin-bottom: 53px;
+}
+.block-text__left-block {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex: 0 1 50%;
+	flex-direction: column;
+}
+.block-text__right-block {
+	flex: 0 1 50%;
+}
+.block-text__left-block > .left-block__text {
+	flex-grow: 1;
+}
+.big-img-item {
+	width: 100%;
+}
+.first-bif-img {
+	margin-bottom: 100px;
+}
+.block-text__container {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 160%;
+	color: #9c9c9c;
+	display: flex;
+	gap: 32px;
+}
+
+.block-galary {
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+}
+.galary {
+	display: flex;
+	gap: 20px;
+}
+.galary__item {
+	flex: 0 1 50%;
+	overflow: hidden;
+}
+.galary__item img {
+	width: 100%;
+	transition: transform 0.5s;
+}
+.galary__item img:hover {
+	transform: scale(1.1);
+}
+@media (max-width: 1071px) {
+	.card {
+		display: block;
+	}
+	.card__image {
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
+	.text-block {
+		gap: 5px;
+	}
+	.text-block__text {
+		max-height: fit-content;
+	}
+}
+@media (max-width: 824px) {
+	.first-bif-img {
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 671px) {
+	.block-text__container {
+		flex-direction: column;
+	}
+	.title-text-minimalist {
+		margin-bottom: 15px;
+	}
+	.galary {
+		flex-direction: column;
+		gap: 4px;
+	}
+	.block-galary {
+		gap: 4px;
+	}
+	.minimalist__sub-titel {
+		margin-bottom: 13px;
+	}
+}
+@media (max-width: 515px) {
+	.minimalist__title {
+		font-size: 36px;
+	}
+}

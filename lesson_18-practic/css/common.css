@@ -1,0 +1,18 @@
+/* title */
+.title {
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 1.6; /* 40/25 */
+   color: #212529;
+}
+.title_white {
+   color: #f8f9fa;
+}
+/* ------------------ */
+.text {
+   line-height: 1.66; /* 20/12 */
+   color: #495057;
+}
+.text_white {
+   color: #e5e5e5;
+}

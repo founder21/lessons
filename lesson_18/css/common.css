@@ -1,0 +1,165 @@
+/* меню навігацію сайту */
+.navi {
+   display: flex;
+   gap: 25px;
+}
+
+.navi__item:hover .navi__link::after,
+.navi__link {
+   width: 100%;
+}
+
+.navi__item:hover .navi__link {
+   color: #495057;
+}
+
+.active a {
+   color: #495057;
+}
+
+.active .navi__link::after {
+   width: 100%;
+}
+
+.navi__link {
+   position: relative;
+   color: rgba(73, 80, 87, 0.5);
+}
+
+.navi__link::after {
+   content: "";
+   position: absolute;
+   top: 20px;
+   left: 0;
+   height: 2px;
+   width: 0;
+   background: #ddbea9;
+   border-radius: 2px;
+   transition: width 0.3s;
+}
+
+/* ---------------------------- */
+
+.footer {
+   background: #212529;
+   color: rgba(248, 249, 250, 0.5);
+}
+
+
+.footer__top {
+   display: flex;
+   justify-content: space-between;
+   padding: 40px 0;
+   border-bottom: 1px solid rgba(229, 229, 229, 0.2);
+}
+
+.footer__bottom {
+   padding: 40px 0;
+}
+
+.footer__other {
+   display: flex;
+   justify-content: space-between;
+}
+
+.menu {
+   display: flex;
+   gap: 25px;
+}
+
+.social-block {
+   display: flex;
+   gap: 25px;
+}
+
+.menu__item:hover,
+.footer-item-social:hover {
+   color: #F8F9FA;
+}
+
+/* ---------------------------- */
+
+.spoller-block {
+   height: 500px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-size: cover;
+   text-align: center;
+   border-radius: 5px;
+   margin-bottom: 100px;
+}
+
+.page__spoller-block {
+   background: url(/img/bg.jpg) center no-repeat;
+}
+
+.page-interior__spoller-block {
+   background: url(/img/page-interior-spoller-block.jpg) center no-repeat;
+}
+
+
+.name {
+   font-weight: 300;
+   font-size: 12px;
+   line-height: 166.666667%;
+   /* 20/12 */
+   color: #E5E5E5;
+   margin-bottom: 15px;
+}
+
+.title {
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 160%;
+}
+
+.spoller-block__title {
+   color: #F8F9FA;
+   max-width: 375px;
+}
+
+/* ---------------------------- */
+@media (max-width:768.98px) {
+
+   .footer__top {
+      padding: 20px 0 5px 0;
+      border-bottom: none
+   }
+
+   .footer__bottom {
+      padding: 15px 0 20px 0;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      flex-wrap: wrap;
+   }
+
+   .footer__other {
+      display: flex;
+      gap: 25px;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 0;
+      color: #495057;
+   }
+
+   .menu {
+      display: none;
+   }
+
+   .menu-table {
+      display: flex;
+      border-bottom: 1px solid rgba(229, 229, 229, 0.2);
+      padding-bottom: 20px;
+   }
+}
+
+@media (min-width:768.98px) {
+   .menu-table {
+      display: none;
+
+   }
+}

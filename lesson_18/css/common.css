@@ -93,11 +93,11 @@
 }
 
 .page__spoller-block {
-   background: url(/img/bg.jpg) center no-repeat;
+   background: url(../img/bg.jpg) center no-repeat;
 }
 
 .page-interior__spoller-block {
-   background: url(/img/page-interior-spoller-block.jpg) center no-repeat;
+   background: url(../img/page-interior-spoller-block.jpg) center no-repeat;
 }
 
 

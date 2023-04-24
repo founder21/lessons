@@ -1,0 +1,75 @@
+.title-block {
+   text-align: center;
+   max-width: 490px;
+   margin: 0 auto;
+   margin-bottom: 70px;
+}
+
+.title-block__title {
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 112.5%;
+   /* 45/40 */
+   text-transform: capitalize;
+   color: #212B36;
+   margin-bottom: 15px;
+}
+
+.title-block__sub-title {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 150%;
+   /* 24/16 */
+   color: #637381;
+}
+
+/** -------------HOMEPAGE--------------- */
+
+.title {
+   text-align: center;
+   margin-bottom: 70px;
+   padding-top: 60px;
+}
+
+.title__sub-title {
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 24/18;
+   color: #3056D3;
+}
+
+.title__title {
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 112.5%;
+   /* 45/40 */
+   margin: 8px 0 15px 0;
+   text-transform: capitalize;
+   color: #212B36;
+}
+
+.title__text {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 150%;
+   /* 24/16 */
+   max-width: 569px;
+   margin: 0 auto;
+   color: #637381;
+}
+
+
+/* ---------------------------- */
+.footer {
+   padding: 60px 0;
+   text-transform: uppercase;
+   color: #CACBCF;
+   background: #212B36;
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+}
+
+.footer a:hover {
+   color: #3056D3;
+}

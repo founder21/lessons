@@ -636,21 +636,21 @@ $text-color-car: #000000; // текст карточки
    // position: relative;
    // padding-bottom: 46%; /* 434/924 */
    // overflow: hidden;
-   &__third {
-      background: url(../img/image-2.png) center no-repeat;
-      background-size: cover;
-      width: 100%;
-      height: 100%;
-      flex: 0 1 50%;
-      @media (max-width: 665.98px) {
-         display: none;
-      }
-      //    position: absolute;
-      //    top: 0;
-      //    left: 0;
-      //    width: 100%;
-      //    height: 100%;
-      //    object-fit: cover;
-      // }
+}
+.big-banner-block-image-third {
+   background: url(../img/image-2.png) center no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+   flex: 0 1 50%;
+   @media (max-width: 665.98px) {
+      display: none;
    }
+   //    position: absolute;
+   //    top: 0;
+   //    left: 0;
+   //    width: 100%;
+   //    height: 100%;
+   //    object-fit: cover;
+   // }
 }

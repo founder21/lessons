@@ -852,7 +852,8 @@ body {
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
 }
-.big-banner-block-image__third {
+
+.big-banner-block-image-third {
   background: url(../img/image-2.png) center no-repeat;
   background-size: cover;
   width: 100%;
@@ -862,7 +863,7 @@ body {
           flex: 0 1 50%;
 }
 @media (max-width: 665.98px) {
-  .big-banner-block-image__third {
+  .big-banner-block-image-third {
     display: none;
   }
 }

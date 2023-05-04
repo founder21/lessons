@@ -836,6 +836,12 @@ body {
     font-size: 62px;
   }
 }
+@media (max-width: 462.98px) {
+  .text-big {
+    bottom: 10px;
+    left: 10px;
+  }
+}
 
 .big-banner-block-image {
   background: url(../img/image-1.png) center no-repeat;

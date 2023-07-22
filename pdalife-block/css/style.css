@@ -65,7 +65,7 @@ button {
 }
 
 .subject-block {
-  background-image: url(/img/pgcom.jpeg);
+  background-image: url(../img/pgcom.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;

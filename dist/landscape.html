@@ -6,17 +6,17 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231006123037">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231007010748">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper landscape">
 		<header class="header">
 			<div class="header__container">
-				<a href="/home.html" class="header__logo"><img src="img/icon/logo-white.svg" alt="Logo"></a>
+				<a href="../main.html" class="header__logo"><img src="img/icon/logo-white.svg" alt="Logo"></a>
 				<div class="header__navigation">
 					<div class="header__menu menu">
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -30,7 +30,7 @@
 							</ul>
 						</nav>
 					</div>
-					<a href="#" data-da=".header__container, 767.98, 1" class="header__btn btn-orange-bor">Сonsultation</a>
+					<a href="#" data-popup="#popup" data-da=".header__container, 767.98, 1" class="header__btn btn-orange-bor">Сonsultation</a>
 				</div>
 			</div>
 		</header>
@@ -142,7 +142,7 @@
 								<div class="item-what-we-do__number">4</div>
 								<h1 class="item-what-we-do__title">Project implementation</h1>
 								<p class="item-what-we-do__text">Author's supervision of the project, installation of engineering systems, as well as finishing works</p>
-								<button type="button" data-da=".what-we-do__container, 767.98, 1" class="item-what-we-do-last-item__button-big btn-light-theme">Write to us</button>
+								<button type="button" data-da=".what-we-do__container, 767.98, 1" class="button-big btn-light-theme">Write to us</button>
 							</article>
 						</div>
 					</div>
@@ -199,7 +199,28 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20231006123037"></script>
+	<script src="js/app.min.js?_v=20231007010748"></script>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__container">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"><img src="img/icon/close.svg" alt=""></button>
+					<h1 class="popup__title">Let's start your project!</h1>
+					<p class="popup__text">
+						Just enter your email address and we will discuss your project or idea together
+					</p>
+					<form action="files/sendmail/sendmail.php" method="POST">
+						<div class="popup__form-popup form-popup">
+							<input type="email" name="form[email]" data-error="Error" placeholder="Email" class="form-popup__input">
+							<input type="text" name="form[text]" data-error="Error" placeholder="Name" class="form-popup__input">
+						</div>
+						<textarea type="text" name="form[text]" placeholder="Message" class="form-popup__input form-popup__input-message"></textarea>
+						<button type="submit" class="form-popup__send-btn">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

@@ -6,17 +6,17 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231007010748">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231010235705">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper premium-design">
 		<header class="header">
 			<div class="header__container">
-				<a href="../main.html" class="header__logo"><img src="img/icon/logo-white.svg" alt="Logo"></a>
+				<a href="main.html" class="header__logo"><img src="img/icon/logo-white.svg" alt="Logo"></a>
 				<div class="header__navigation">
 					<div class="header__menu menu">
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -156,7 +156,20 @@
 							<h2 class="make-me__sub-title name-sections">Make me a stile</h2>
 							<h1 class="make-me__title title-block">Select the style you need and pull the slider to compare different options</p>
 						</div>
-						шляпа
+						<div data-ba class="before-after">
+							<div data-ba-before class="before-after__item">
+								<picture><source srcset="img/block-background/gagarinskiy-block-background.webp" type="image/webp"><img src="img/block-background/gagarinskiy-block-background.png" alt=""></picture>
+							</div>
+							<div data-ba-after class="before-after__item">
+								<picture><source srcset="img/block-background/lagom-main.webp" type="image/webp"><img src="img/block-background/lagom-main.jpg" alt=""></picture>
+							</div>
+							<div data-ba-arrow class="before-after__arrow">
+								<div class="before-after-circle before-after-circle__premium-page">
+									<img src="img/icon/left-arrow.svg" alt="">
+									<img src="img/icon/right-arrow.svg" alt="">
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -202,7 +215,7 @@
 									<input type="text" name="form[text]" data-error="Error" placeholder="Name" class="input">
 								</div>
 								<input type="text" name="form[text]" data-error="Error" placeholder="Message" class="input">
-								<button type="submit" class="forms-block-footer-body__send-btn btn-orange-bor">Send</button>
+								<button type="submit" class="forms-block-footer-body__send-btn send-btn">Send</button>
 							</form>
 						</div>
 					</div>
@@ -210,7 +223,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20231007010748"></script>
+	<script src="js/app.min.js?_v=20231010235705"></script>
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__container">
@@ -225,7 +238,7 @@
 							<input type="email" name="form[email]" data-error="Error" placeholder="Email" class="form-popup__input">
 							<input type="text" name="form[text]" data-error="Error" placeholder="Name" class="form-popup__input">
 						</div>
-						<textarea type="text" name="form[text]" placeholder="Message" class="form-popup__input form-popup__input-message"></textarea>
+						<textarea name="form[text]" placeholder="Message" class="form-popup__input form-popup__input-message"></textarea>
 						<button type="submit" class="form-popup__send-btn">Send</button>
 					</form>
 				</div>

@@ -470,6 +470,8 @@ body::after {
 
 .button-big {
   position: absolute;
+  width: 13.75rem;
+  height: 13.75rem;
   top: 25%;
   right: 100%;
   border-radius: 50%;
@@ -1803,14 +1805,6 @@ body::after {
 
 @media (min-width: 78.125em) {
   .button-big {
-    width: 13.75rem;
-  }
-
-  .button-big {
-    height: 13.75rem;
-  }
-
-  .button-big {
     margin-right: 7.1875rem;
   }
 
@@ -2122,14 +2116,6 @@ body::after {
 }
 
 @media (max-width: 20em) {
-  .button-big {
-    width: 6.25rem;
-  }
-
-  .button-big {
-    height: 6.25rem;
-  }
-
   .button-big {
     margin-right: 1.5625rem;
   }
@@ -2443,9 +2429,9 @@ body::after {
     display: inline-block;
     margin-right: 0;
     width: 100%;
-    height: 70px;
-    border-radius: 50px;
-    margin-top: 20px;
+    height: 4.375rem;
+    border-radius: 3.125rem;
+    margin-top: 1.25rem;
   }
 
   .btn-light-theme {
@@ -2711,10 +2697,6 @@ body::after {
     padding: 0rem;
   }
 
-  .item-what-we-do-last-item__button-big {
-    border: 1px solid #ee9154;
-  }
-
   .projects-page__bootom-block {
     display: block;
   }
@@ -2815,30 +2797,6 @@ body::after {
 }
 
 @media (min-width: 20em) and (max-width: 78.125em) {
-@supports (width: clamp( 6.25rem , 3.6693548387rem  +  12.9032258065vw , 13.75rem )) {
-    .button-big {
-      width: clamp( 6.25rem , 3.6693548387rem  +  12.9032258065vw , 13.75rem );
-    }
-}
-
-@supports not (width: clamp( 6.25rem , 3.6693548387rem  +  12.9032258065vw , 13.75rem )) {
-    .button-big {
-      width: calc(6.25rem + 7.5 * (100vw - 20rem) / 58.125);
-    }
-}
-
-@supports (height: clamp( 6.25rem , 3.6693548387rem  +  12.9032258065vw , 13.75rem )) {
-    .button-big {
-      height: clamp( 6.25rem , 3.6693548387rem  +  12.9032258065vw , 13.75rem );
-    }
-}
-
-@supports not (height: clamp( 6.25rem , 3.6693548387rem  +  12.9032258065vw , 13.75rem )) {
-    .button-big {
-      height: calc(6.25rem + 7.5 * (100vw - 20rem) / 58.125);
-    }
-}
-
 @supports (margin-right: clamp( 1.5625rem , -0.372983871rem  +  9.6774193548vw , 7.1875rem )) {
     .button-big {
       margin-right: clamp( 1.5625rem , -0.372983871rem  +  9.6774193548vw , 7.1875rem );

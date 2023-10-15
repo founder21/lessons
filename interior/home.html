@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231013171811">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231016024118">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,7 +75,7 @@
 				</div>
 			</section>
 			<!-- --------- -->
-			<section class="page__gagarinskiy-block gagarinskiy-block">
+			<section data-watch data-watch-once class="page__gagarinskiy-block gagarinskiy-block">
 				<div class="gagarinskiy-block__container">
 					<a href="#" class="gagarinskiy-block__top-btn btn-bg-grey">See all project</a>
 					<article class="gagarinskiy-block__body body-block">
@@ -123,22 +123,22 @@
 							<p class="what-we-do__text">Step by step we are moving towards the realization of your cherished dream</p>
 						</div>
 						<div class="what-we-do__items-what-we-do items-what-we-do">
-							<article class="items-what-we-do__item item-what-we-do">
+							<article data-watch data-watch-once class="items-what-we-do__item item-what-we-do">
 								<div class="item-what-we-do__number">1</div>
 								<h1 class="item-what-we-do__title">Preliminary design</h1>
 								<p class="item-what-we-do__text">It includes the preparation of the terms of reference and the implementation of two variants of the planning solution</p>
 							</article>
-							<article class="items-what-we-do__item items-what-we-do__item-second item-what-we-do">
+							<article data-watch data-watch-once class="items-what-we-do__item items-what-we-do__item-second item-what-we-do">
 								<div class="item-what-we-do__number">2</div>
 								<h1 class="item-what-we-do__title">3D visualization</h1>
 								<p class="item-what-we-do__text">At this stage, we prepare photorealistic images of the interior, which includes three angles from different sides</p>
 							</article>
-							<article class="items-what-we-do__item item-what-we-do">
+							<article data-watch data-watch-once class="items-what-we-do__item item-what-we-do">
 								<div class="item-what-we-do__number">3</div>
 								<h1 class="item-what-we-do__title">Technical documentation</h1>
 								<p class="item-what-we-do__text">We are preparing an architectural solution, also a constructive solution and an engineering project</p>
 							</article>
-							<article class="items-what-we-do__item items-what-we-do__item-second item-what-we-do item-what-we-do-last-item">
+							<article data-watch data-watch-once class="items-what-we-do__item items-what-we-do__item-second item-what-we-do item-what-we-do-last-item">
 								<div class="item-what-we-do__number">4</div>
 								<h1 class="item-what-we-do__title">Project implementation</h1>
 								<p class="item-what-we-do__text">Author's supervision of the project, installation of engineering systems, as well as finishing works</p>
@@ -149,14 +149,34 @@
 				</div>
 			</section>
 			<!-- --------- -->
-			<section class="page__make-me make-me">
+			<section data-watch data-watch-once class="page__make-me make-me">
 				<div class="make-me__container">
 					<div class="make-me__body">
 						<div class="make-me__body-title-block body-title-block">
 							<h2 class="make-me__sub-title name-sections">Make me a stile</h2>
 							<h1 class="make-me__title title-block">Select the style you need and pull the slider to compare different options</p>
 						</div>
-						<div data-ba class="before-after">
+						<div class="select-block">
+							<form action="#" class="select-block__left-form left-form">
+								<select name="form[]" data-class-modif="form-left">
+									<option value="1" selected>Minimal stile</option>
+									<option value="2">Loft</option>
+									<option value="3">Пункт №3</option>
+									<option value="4">Modern stile</option>
+								</select>
+								<p class="left-form__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi aliquid iure? Consequatur iure commodi quasi, error excepturi dicta dolore velit quas officia pariatur mollitia quisquam adipisci modi nostrum eveniet.</p>
+							</form>
+							<form action="#" class="select-block__right-form right-form">
+								<select name="form[]" data-class-modif="form-right">
+									<option value="1" selected>Modern stile</option>
+									<option value="2">Loft</option>
+									<option value="3">Modern stile</option>
+									<option value="4">Пункт №4</option>
+								</select>
+								<p class="right-form__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi aliquid iure? Consequatur iure commodi quasi, error excepturi dicta dolore velit quas officia pariatur mollitia quisquam adipisci modi nostrum eveniet.</p>
+							</form>
+						</div>
+						<div data-ba data-watch data-watch-once class="before-after">
 							<div data-ba-before class="before-after__item">
 								<picture><source srcset="img/block-background/gagarinskiy-block-background.webp" type="image/webp"><img src="img/block-background/gagarinskiy-block-background.png" alt=""></picture>
 							</div>
@@ -164,7 +184,7 @@
 								<picture><source srcset="img/block-background/lagom-main.webp" type="image/webp"><img src="img/block-background/lagom-main.jpg" alt=""></picture>
 							</div>
 							<div data-ba-arrow class="before-after__arrow">
-								<div class="before-after-circle before-after-circle__premium-page">
+								<div class="before-after-circle before-after-circle-premium-page">
 									<img src="img/icon/left-arrow.svg" alt="">
 									<img src="img/icon/right-arrow.svg" alt="">
 								</div>
@@ -223,7 +243,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20231013171811"></script>
+	<script src="js/app.min.js?_v=20231016024118"></script>
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__container">

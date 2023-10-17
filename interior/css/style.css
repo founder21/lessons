@@ -615,6 +615,10 @@ body::after {
   transition: all 0.3s;
 }
 
+.btn-bg-grey:hover {
+  color: #ee9154;
+}
+
 .button-big {
   position: absolute;
   width: 13.75rem;
@@ -638,6 +642,10 @@ body::after {
   transition: all 0.3s;
 }
 
+.button-dark-grey:hover {
+  color: #ee9154;
+}
+
 .btn-orange-bor,
 .send-btn {
   padding: 0.875rem 1.375rem;
@@ -646,6 +654,14 @@ body::after {
   border: 0.0625rem solid #ee9154;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.btn-orange-bor:hover,
+.send-btn:hover {
+  background: linear-gradient(105deg, #fc8335 49.93%, #933310 66.98%, #d15e1b 77.7%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn-light-theme {
@@ -657,6 +673,10 @@ body::after {
   background: #dad4c8;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.btn-light-theme:hover {
+  color: #ee9154;
 }
 
 .btn-light-theme-null {
@@ -679,6 +699,10 @@ body::after {
   background: #464646;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.btn-dark-theme:hover {
+  color: #ee9154;
 }
 
 .title-block {
@@ -1563,11 +1587,11 @@ body::after {
   border-right: 0.0625rem dashed rgba(70, 70, 70, 0.3);
 }
 
-.item-what-we-do-lagom__item-second {
+.item-what-we-do-lagom-item-second {
   border: 0.0625rem solid #464646;
 }
 
-.item-what-we-do-lagom__item-second:not(:last-child)::before {
+.item-what-we-do-lagom-item-second:not(:last-child)::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -2363,7 +2387,7 @@ body::after {
     width: 14.1875rem;
   }
 
-  .item-what-we-do-lagom__item-second:not(:last-child)::before {
+  .item-what-we-do-lagom-item-second:not(:last-child)::before {
     width: 14.1875rem;
   }
 
@@ -2691,7 +2715,7 @@ body::after {
     width: 2.0625rem;
   }
 
-  .item-what-we-do-lagom__item-second:not(:last-child)::before {
+  .item-what-we-do-lagom-item-second:not(:last-child)::before {
     width: 2.0625rem;
   }
 
@@ -3113,7 +3137,7 @@ body::after {
     display: none;
   }
 
-  .item-what-we-do-lagom__item-second:not(:last-child)::before {
+  .item-what-we-do-lagom-item-second:not(:last-child)::before {
     display: none;
   }
 
@@ -3893,13 +3917,13 @@ body::after {
 }
 
 @supports (width: clamp( 2.0625rem , -2.1095430108rem  +  20.8602150538vw , 14.1875rem )) {
-    .item-what-we-do-lagom__item-second:not(:last-child)::before {
+    .item-what-we-do-lagom-item-second:not(:last-child)::before {
       width: clamp( 2.0625rem , -2.1095430108rem  +  20.8602150538vw , 14.1875rem );
     }
 }
 
 @supports not (width: clamp( 2.0625rem , -2.1095430108rem  +  20.8602150538vw , 14.1875rem )) {
-    .item-what-we-do-lagom__item-second:not(:last-child)::before {
+    .item-what-we-do-lagom-item-second:not(:last-child)::before {
       width: calc(2.0625rem + 12.125 * (100vw - 20rem) / 58.125);
     }
 }
@@ -4148,22 +4172,6 @@ body::after {
 @media (any-hover: hover) {
   .select__option:hover {
     background: #d9d9d9;
-  }
-
-  .btn-bg-grey:hover {
-    color: #ee9154;
-  }
-
-  .button-dark-grey:hover {
-    color: #ee9154;
-  }
-
-  .btn-orange-bor:hover,
-  .send-btn:hover {
-    background: linear-gradient(105deg, #fc8335 49.93%, #933310 66.98%, #d15e1b 77.7%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   .social__social-link a:hover {

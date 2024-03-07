@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p>
+    Користувачу повідомляють суму, яку йому треба сплатити. Користувач поступово вводить суму грошей до тих пір, поки суми не буде достатньо для оплати товарів (кожного разу користувачу повідомляють, яку ще суму потрібно ввести).
+  </p>
+  <script>
+    let sum = 1 + Math.floor(Math.random() * 100)
+    alert(`Сума для сплати ${sum}`)
+    let userSum = parseFloat(prompt("Введіть суму до сплати:"))
+    while (userSum < sum) {
+      let result = sum - userSum;
+      userSum += parseFloat(prompt(`Введіть ще ${result} грн до оплати:`));
+    }
+    alert(`Дякую!`)
+
+
+
+  </script>
+</body>
+
+</html>
